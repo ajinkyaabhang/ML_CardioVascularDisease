@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict your chances of Cardio Vascular Disease</h1>
+
+    <div class="form">
+        <form style="text-align: center" action="/predict_new" method="POST">
+		<style>
+				body {
+  						background-color: #91d4ba;
+					}
+			</style>
+			<label>Age
+            <input type="number" name="age" id="age" placeholder="Age (in days)">
+			<label for="gender">Gender</label>
+				<select id="gender" name="gender">
+					<option value="Male">Male(2)</option>
+					<option value="Female">Female(1)</option>
+				</select><br><br>
+			<label>Height
+            <input type="number" name="height" id="height" placeholder="Height (in CM)"></br>
+			<label>Weight
+            <input type="float" name="weight" id="weight" placeholder="Weight (in KG)"><br><br>
+			<label>High Blood Pressure
+            <input type="number" name="ap_hi" id="ap_hi" placeholder="High Blood Pressure"></br>
+			<label>Low Blood Pressure
+            <input type="number" name="ap_lo" id="ap_lo" placeholder="Low Blood Pressure"><br><br>
+			<label for="cholesterol">cholesterol</label>
+				<select id="cholesterol" name="cholesterol">
+					<option value="Low">Low(1)</option>
+					<option value="Medium">Medium(2)</option>
+					<option value="High">High(3)</option>
+				</select>
+			<label for="gluc">gluc</label>
+				<select id="gluc" name="gluc">
+					<option value="Low">Low(1)</option>
+					<option value="Medium">Medium(2)</option>
+					<option value="High">High(3)</option>
+				</select><br><br>
+			<label for="smoke">smoke</label>
+				<select id="smoke" name="smoke">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+				</select>
+			<label for="alco">alco</label>
+				<select id="alco" name="alco">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+					</select>
+			<label for="active">active</label>
+				<select id="active" name="active">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+				</select><br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+
+<div class="content">
+    <h1 style="text-align: center">Cardio Vascular Disease Prediction from CSV File</h1>
+		<div class="form">
+			<form style="text-align: center" action="/predict" method="POST">
+				<label for="Default_File_Predict">Default File Predict</label>
+					<select id="Default_File_Predict" name="Default_File_Predict">
+						<option value="Prediction_Batch_files">Prediction_Batch_files</option>
+					</select>
+				<input type="submit" value="Predict">
+			</form>
+    </div>
+</div>
+
+{% endblock %}

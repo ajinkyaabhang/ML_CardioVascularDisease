@@ -1,0 +1,19 @@
+{	"SampleFileName": "cardiovascular_25052020_120000.csv",
+	"LengthOfDateStampInFile": 8,
+	"LengthOfTimeStampInFile": 6,
+	"NumberofColumns" : 12,
+	"ColName": {
+				"id" : "Integer",
+				"age" : "Integer",
+				"gender" : "Integer",
+				"height" : "Integer",
+				"weight" : "float",
+				"ap_hi" : "Integer",
+				"ap_lo" : "Integer",
+				"cholesterol" : "Integer",
+				"gluc": "Integer",
+				"smoke": "Integer",
+				"alco" : "Integer",
+				"active" : "Integer"
+	}
+}

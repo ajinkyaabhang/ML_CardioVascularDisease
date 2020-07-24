@@ -1,0 +1,41 @@
+2020-06-12/18:11:34		Start of Training
+2020-06-12/18:11:34		Entered the get_data method of the Data_Getter class
+2020-06-12/18:11:34		Data Load Successful.Exited the get_data method of the Data_Getter class
+2020-06-12/18:11:34		Entered the dropOutliers method of the Preprocessor class
+2020-06-12/18:11:34		Entered the dataProcessor method of the Preprocessor class
+2020-06-12/18:11:34		Entered the separate_label_feature method of the Preprocessor class
+2020-06-12/18:11:34		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2020-06-12/18:11:34		Entered the elbow_plot method of the KMeansClustering class
+2020-06-12/18:12:44		The optimum number of clusters is: 3 . Exited the elbow_plot method of the KMeansClustering class
+2020-06-12/18:12:44		Entered the create_clusters method of the KMeansClustering class
+2020-06-12/18:12:46		Entered the save_model method of the File_Operation class
+2020-06-12/18:12:46		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2020-06-12/18:12:46		succesfully created 3clusters. Exited the create_clusters method of the KMeansClustering class
+2020-06-12/18:12:46		Entered the get_best_model method of the Model_Finder class
+2020-06-12/18:12:46		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-12/18:24:23		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 20, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-12/18:24:24		AUC for XGBoost:0.7514300672608141
+2020-06-12/18:24:24		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-12/18:27:36		Random Forest best params: {'criterion': 'gini', 'max_depth': 25, 'max_features': 'auto', 'n_estimators': 115}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-12/18:27:37		AUC for RF:0.7613333591081428
+2020-06-12/18:27:37		Entered the save_model method of the File_Operation class
+2020-06-12/18:27:38		Model File RandomForest1 saved. Exited the save_model method of the Model_Finder class
+2020-06-12/18:27:38		Entered the get_best_model method of the Model_Finder class
+2020-06-12/18:27:38		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-12/18:31:41		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 20, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-12/18:31:42		AUC for XGBoost:0.6323138231342434
+2020-06-12/18:31:42		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-12/18:33:15		Random Forest best params: {'criterion': 'gini', 'max_depth': 23, 'max_features': 'auto', 'n_estimators': 130}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-12/18:33:15		AUC for RF:0.6610853425892156
+2020-06-12/18:33:15		Entered the save_model method of the File_Operation class
+2020-06-12/18:33:16		Model File RandomForest2 saved. Exited the save_model method of the Model_Finder class
+2020-06-12/18:33:16		Entered the get_best_model method of the Model_Finder class
+2020-06-12/18:33:16		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-12/18:40:08		XGBoost best params: {'learning_rate': 0.5, 'max_depth': 20, 'n_estimators': 100}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-12/18:40:09		AUC for XGBoost:0.8939494680851063
+2020-06-12/18:40:09		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-12/18:42:32		Random Forest best params: {'criterion': 'gini', 'max_depth': 25, 'max_features': 'auto', 'n_estimators': 115}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-12/18:42:32		AUC for RF:0.9161892774602166
+2020-06-12/18:42:32		Entered the save_model method of the File_Operation class
+2020-06-12/18:42:33		Model File RandomForest0 saved. Exited the save_model method of the Model_Finder class
+2020-06-12/18:42:33		Successful End of Training
